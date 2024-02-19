@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Hash Algorithm</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Secure Hash Algorithm</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About Secure Hash Algorithm</h2>
+            <p>
+                SHA-256 (Secure Hash Algorithm 256-bit) is a cryptographic hash function that takes input data and produces a fixed-size output of 256 bits, commonly represented as a 64-character hexadecimal number. It is a part of the SHA-2 family of hash functions designed by the National Security Agency (NSA).
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve the Universal Hashing problem:
+                <ol>
+                    <li>Set up initial constants and variables that the algorithm will use. These include predefined constant values and an initial hash value (known as the "initialization vector").</li>
+                    <li>Take the input message and preprocess it. This involves padding the message to a specific length, usually in multiples of 512 bits, and appending the original message length. This step ensures that the message has a suitable format for processing.</li>
+                    <li>Divide the padded message into blocks of 512 bits. For each block, perform a series of logical and arithmetic operations. This is where the core processing of the message takes place, and it involves multiple rounds of operations.</li>
+                    <li>After processing each block, update the hash values. The hash values are modified based on the processed block, and this step is repeated for each block of the message.</li>
+                    <li>Once all blocks are processed, concatenate the final hash values. This results in the 256-bit (32-byte) hash, representing a unique fingerprint of the original input message.</li>
+                </ol>
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <img src="Flowchart-of-the-Binary-search-algorithm.png" alt="BinarySearch Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script35.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Selection Sort</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About the Selection Sort</h2>
+            <p>
+               
+          Selection sort is a simple sorting algorithm that iteratively selects the minimum element from an unsorted portion of the array and swaps it with the first unsorted element, gradually building a sorted sequence. It has a time complexity of O(n^2) and is not suitable for large datasets.
+           </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve the linear search problem:
+                <ol>
+                 <li>   Initialization: Start by assuming the entire array is unsorted.</li>
+
+
+                   <li> Iteration: Iterate through the unsorted portion of the array to find the minimum element.</li>
+
+                  <li>Swap: Swap the minimum element with the first element of the unsorted portion.</li>
+
+                  <li>Increment: Move the boundary between the sorted and unsorted portions one position to the right.</li>
+
+                  <li>Repeat: Repeat steps 2-4 until the entire array is sorted. The sorted portion gradually grows from the beginning of the array to the end.</li>
+                </ol>
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <!-- You can insert your flowchart image here -->
+            <img src="Linear-Search-Flow-Chart.webp" alt="Selection_sort Flowchart">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script6.js"></script>
+</body>
+</html>

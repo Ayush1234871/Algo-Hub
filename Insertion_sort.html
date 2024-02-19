@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Insertion Sort</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About the Insertion Sort</h2>
+            <p>
+                
+Insertion Sort is a simple sorting algorithm that builds the final sorted array one element at a time, inserting each element into its correct position. It is efficient for small datasets and often performs well for partially sorted arrays.
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve the Insertion Sort problem:
+                <ol>
+                    <li>Initialize: Start with the second element (index 1) assuming the first element (index 0) is already sorted.</li>
+                    <li>Compare: Compare the current element with the previous elements in the sorted portion. Move elements greater than the current one to the right.</li>
+                    <li>Insert: Insert the current element into its correct position in the sorted portion by shifting larger elements to the right.</li>
+                    <li>Repeat: Repeat steps 2-3 for the remaining unsorted elements, gradually expanding the sorted portion.</li>
+                    <li>Completion: The array is now sorted when all elements have been included in the sorted portion.</li>
+                  </ol>
+                  
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <img src="Flowchart-of-the-Binary-search-algorithm.png" alt="Insertion_sort Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script8.js"></script>
+</body>
+</html>

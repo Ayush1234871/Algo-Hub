@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Vegas Algorithms</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Las Vegas Algorithms</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About Las Vegas Algorithms</h2>
+            <p>
+                Las Vegas algorithms are randomized algorithms that always produce the correct result, but the running time varies randomly.
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve Las Vegas Algorithm problem:
+                <ol>
+                    <li>Las Vegas algorithms are typically employed when a randomized approach can yield a correct solution.</li>
+                    <li>Identify the parts of the algorithm where randomness will be introduced. This could involve selecting random choices, shuffling, or employing random strategies.</li>
+                    <li>Implement the algorithm with the randomized components. Ensure that the algorithm is designed to guarantee correctness while allowing for variations in the running time.</li>
+                    <li>Establish a termination condition that ensures correctness. The algorithm should continue execution until it arrives at the correct result, and the randomness affects the running time rather than the correctness of the outcome.</li>
+                    <li>Assess the probability distribution of the running time and verify that, with high probability, the algorithm produces the correct solution within a reasonable amount of time.</li>
+                </ol>
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <!-- You can insert your flowchart image here -->
+            <img src="Linear-Search-Flow-Chart.webp" alt="Linear Search Flowchart">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script37.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Bubble Sort</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About the Bubble Sort</h2>
+            <p>
+            Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve the Bubble Sort problem:
+                <ol>
+                    <li>   Initialize: Start by initializing a variable to track whether any swaps have been made in the current pass. Set it to false initially.</li>
+
+                        <li>Iterate through the List: Perform a pass through the list, comparing adjacent elements. If an element is greater than its adjacent element, swap them and set the swap flag to true.</li>
+
+                            <li>Check for Swaps: After each pass, check if any swaps were made. If no swaps occurred, the list is already sorted, and the algorithm can terminate.</li>
+
+                                <li>Repeat: If swaps were made, repeat the process from step 2 for the unsorted portion of the list. Each pass bubbles the largest unsorted element to its correct position.</li>
+
+                                    <li>Completion: Once no swaps are made in a pass, and the entire list is sorted, the algorithm terminates. </li>  </ol>
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <img src="Flowchart-of-the-Binary-search-algorithm.png" alt="Bubble sort  Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script7.js"></script>
+</body>
+</html>

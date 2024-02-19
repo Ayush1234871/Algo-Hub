@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Linear Search</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Exponential Search Algorithm</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About the Sential Linear Search</h2>
+            <p>
+                Exponential search, also known as galloping search or doubling search, is an algorithm used to find an element in a sorted array. It begins with a small range and repeatedly doubles the size of the search interval until an element greater than the target is found. Once the range is identified, it performs a binary search within that interval for the specific target element. Exponential search is particularly efficient for large datasets, providing a time complexity of O(log n).
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve the Exponential search problem:
+                <ol>
+                <li>Start with the first element of the array as the initial search interval's lower bound and set the upper bound to the minimum of either the array size or a power of 2..</li>
+                <li>Double the size of the search interval iteratively until an element greater than the target is encountered or the end of the array is reached.</li>
+                <li>Perform a binary search within the identified interval to locate the exact position of the target element.</li>
+                <li>Choose an optimal doubling factor based on the dataset size, ensuring a balance between the reduced number of iterations and the overhead of repeatedly doubling the interval.</li>
+                <li>Exponential search provides a time complexity of O(log n), making it efficient for large datasets compared to linear search. The initial exponential growth phase quickly narrows down the search space before the final binary search refines the result.</li>
+                </ol>
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <!-- You can insert your flowchart image here -->
+            <img src="exponential search.png" alt="Exponential Search Flowchart">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script5.js"></script>
+</body>
+</html>

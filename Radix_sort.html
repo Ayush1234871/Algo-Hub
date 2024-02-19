@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radix Sort</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Radix Sort</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About Radix Sort</h2>
+            <p>
+                Radix Sort is a non-comparative sorting algorithm that works by distributing elements into buckets according to their individual digits. It can be applied to integers or strings, treating them as sequences of characters.
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To implement Radix Sort:
+                <ul>
+                    <li><strong>Bucketize:</strong> Distribute elements into buckets based on their least significant digit.</li>
+                    
+                    <li><strong>Collect:</strong> Collect elements from buckets, maintaining the order.</li>
+                    
+                    <li><strong>Repeat:</strong> Repeat the bucketize and collect steps for each digit position, moving from the least significant to the most significant.</li>
+                </ul>
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                        <button id="copy-button">Copy Code</button>
+                        <pre><code id="code"></code></pre>
+                    </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <!-- You can replace the image source with a Radix Sort flowchart -->
+            <img src="Flowchart-of-the-Radix-sort-algorithm.png" alt="RadixSort Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script12.js"></script>
+</body>
+</html>

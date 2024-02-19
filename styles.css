@@ -1,0 +1,169 @@
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.content {
+    margin-top: 90px;
+    overflow-x: scroll;
+}
+
+.boxes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items along the top of the flex container */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.box {
+    width: 400px;
+    margin-right: 20px;
+    background: linear-gradient(-45deg, #24ff72, #9a4eff,rgb(250, 115, 250));
+    border-radius: 10px;
+    text-align: center;
+    padding: 60px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color:black;
+}
+
+.box p {
+    margin-bottom: 80px;
+}
+
+.get-started-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Make the link behave like an inline element */
+}
+
+.get-started-button:hover {
+    background-color: #9b0da8;
+}
+
+/* Style the link inside the button */
+.get-started-button a {
+    color: inherit;
+    text-decoration: none;
+    display: block; /* Fill the entire button with the link */
+    height: 100%; /* Fill the entire button with the link */
+}
+
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    background-color: transparent;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007BFF;
+}
+
+.welcome-text {
+    font-size: 64px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.premium-section {
+    background-color: #210d28;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.premium-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(-45deg, #f321d7, #150108);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.premium-box h2 {
+    color: #ebc209;
+    font-size: 28px;
+}
+
+.premium-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.premium-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background
+    ease;
+}
+
+.premium-button:hover {
+    background-color: #f4d914;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Quick Sort</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About the Quick Sort</h2>
+            <p>
+                QuickSort is a widely used sorting algorithm that employs a divide-and-conquer strategy. It efficiently sorts elements by recursively partitioning the array and sorting its subarrays.   
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve the Quick sort problem:
+                <ul>
+                    <li><strong>Choose Pivot:</strong> Select a pivot element.</li>
+                    
+                    <li><strong>Partitioning:</strong> Rearrange elements, placing smaller ones on the left and larger ones on the right of the pivot.</li>
+                    
+                    <li><strong>Recursion:</strong> Apply steps 1 and 2 recursively to the left and right subarrays.</li>
+                    
+                    <li><strong>Base Case:</strong> Stop recursion when subarrays have 0 or 1 elements.</li>
+                    
+                    <li><strong>Combine:</strong> Sorted subarrays combine in place, yielding the final sorted array.</li>
+                  </ul>                  
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <img src="Flowchart-of-the-Binary-search-algorithm.png" alt="Quick_sort Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script10.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Binary Search</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>About the Binary Search</h2>
+            <p>
+                Binary search is a fundamental algorithm used for efficiently searching for a specific element within a sorted collection or array. It works by repeatedly dividing the search space in half, making it particularly efficient for large datasets.
+            </p>
+        </section>
+        <section class="box">
+            <h2>Approach</h2>
+            <p>
+                To solve the Binary search problem:
+                <ol>
+                    <li>Begin with a sorted dataset or array.</li>
+                    <li>Maintain two pointers, left and right, to define the current search space.</li>
+                    <li>Calculate the midpoint index between left and right.</li>
+                    <li>Compare the element at the midpoint with the target value.</li>
+                    <li>Based on the comparison result, either update left or right to narrow down the search spaace, and repeat the process until the target is found or the search space is empty.</li>
+                </ol>
+            </p>
+        </section>
+        <section class="box">
+            <h2>Code Snippet</h2>
+            <div class="code-container">
+                <div class="language-selector">
+                    <label for="language">Select a Language:</label>
+                    <select id="language">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+                <div class="code-display">
+                    <div class="code-container">
+                    <button id="copy-button">Copy Code</button>
+                    <pre><code id="code"></code></pre>
+                </div>
+                </div>
+                
+                <div class="code-box">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box">
+            <h2>Flowchart</h2>
+            <img src="Flowchart-of-the-Binary-search-algorithm.png" alt="BinarySearch Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Glad We Could Help</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
