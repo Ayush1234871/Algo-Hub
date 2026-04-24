@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci (DP) | Algo Hub</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../aboutus.html">About</a></li>
+            <li><a href="../service.html">Services</a></li>
+            <li><a href="../contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="index.html" class="back-link">← Back to Dynamic Programming</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">Fibonacci (Optimized)</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Compute Fibonacci numbers efficiently using memoization or tabulation.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Time Complexity</span>
+                    <span>O(n)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Space Complexity</span>
+                    <span>O(n) or O(1)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About Fibonacci Sequence</h2>
+            <p>The Fibonacci numbers are the numbers in the following integer sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144... In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation: F(n) = F(n-1) + F(n-2) with seed values F(0) = 0 and F(1) = 1.</p>
+            <p>A naive recursive solution takes O(2^n) time. By using Dynamic Programming (storing the results of overlapping subproblems), we can reduce this to O(n) time.</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach (Tabulation)</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Initialize Array</h4>
+                        <p>Create an array `dp` of size `n+1` to store the Fibonacci numbers.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Base Cases</h4>
+                        <p>Set `dp[0] = 0` and `dp[1] = 1`.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Iterate</h4>
+                        <p>For `i` from 2 to `n`, calculate `dp[i] = dp[i-1] + dp[i-2]`.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Return Result</h4>
+                        <p>Return `dp[n]` which holds the nth Fibonacci number.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">A visual representation of the DP Fibonacci process.</p>
+            <img src="../../assets/fibonacci_flowchart.svg" alt="Fibonacci Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../../js/script_fibonacci.js"></script>
+</body>
+</html>

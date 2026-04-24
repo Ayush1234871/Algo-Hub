@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMP Algorithm | Algo Hub</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../aboutus.html">About</a></li>
+            <li><a href="../service.html">Services</a></li>
+            <li><a href="../contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="index.html" class="back-link">← Back to String Algorithms</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">Knuth-Morris-Pratt (KMP) Algorithm</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Search for occurrences of a pattern within a main text string by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Time Complexity</span>
+                    <span>O(n + m)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Space Complexity</span>
+                    <span>O(m)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About KMP Algorithm</h2>
+            <p>The Knuth-Morris-Pratt (KMP) string-searching algorithm searches for occurrences of a "word" or "pattern" `W` within a main "text string" `S` by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin, thus bypassing re-examination of previously matched characters.</p>
+            <p>This algorithm avoids the redundant comparisons found in the naive approach, making it highly efficient, especially when the pattern contains repeating sub-patterns.</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Preprocess Pattern (LPS Array)</h4>
+                        <p>Construct the Longest Proper Prefix which is also Suffix (LPS) array for the pattern. `lps[i]` stores the length of the longest proper prefix of `pattern[0..i]` that is also a suffix of `pattern[0..i]`.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Search Process</h4>
+                        <p>Iterate through the text. Maintain a pointer `i` for the text and `j` for the pattern.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Match Handling</h4>
+                        <p>If `text[i] == pattern[j]`, increment both `i` and `j`. If `j` equals the pattern length, a match is found!</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Mismatch Handling</h4>
+                        <p>If a mismatch occurs after some matches (`j > 0`), update `j = lps[j-1]` to avoid redundant checks. If `j == 0`, simply increment `i`.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">A visual representation of the KMP algorithm.</p>
+            <img src="../../assets/kmp_flowchart.svg" alt="KMP Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../../js/script_kmp.js"></script>
+</body>
+</html>

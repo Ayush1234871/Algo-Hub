@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort | Algo Hub</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <a href="../../index.html"><img src="../../assets/logo.png" alt="Algo Hub Logo"></a>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../aboutus.html">About</a></li>
+            <li><a href="../service.html">Services</a></li>
+            <li><a href="../contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="index.html" class="back-link">← Back to Sorting Algorithms</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">Selection Sort</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Building a sorted sequence by repeatedly extracting the smallest element.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Best Case</span>
+                    <span>O(n²)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Average Case</span>
+                    <span>O(n²)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Space</span>
+                    <span>O(1)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About Selection Sort</h2>
+            <p>Selection sort is an in-place comparison-based sorting algorithm. It has an O(n²) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort.</p>
+            <p>Selection sort is noted for its simplicity and has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Search for Minimum</h4>
+                        <p>Find the smallest element in the unsorted portion of the array.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Swap</h4>
+                        <p>Swap the found minimum element with the first element of the unsorted portion.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Mark as Sorted</h4>
+                        <p>Consider the swapped element as part of the sorted portion and the boundary moves one element right.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Repeat</h4>
+                        <p>Repeat the process for the remaining unsorted elements until the entire array is sorted.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">Visual logic flow for the selection and swapping mechanism.</p>
+            <img src="../../assets/selection_sort_flowchart.svg" alt="Selection Sort Flowchart" style="width: 100%; max-width: 700px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../../js/script6.js"></script>
+</body>
+</html>

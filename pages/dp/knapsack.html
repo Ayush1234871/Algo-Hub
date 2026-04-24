@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0/1 Knapsack | Algo Hub</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../aboutus.html">About</a></li>
+            <li><a href="../service.html">Services</a></li>
+            <li><a href="../contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="index.html" class="back-link">← Back to Dynamic Programming</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">0/1 Knapsack Problem</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Maximize value within a given weight capacity constraint.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Time Complexity</span>
+                    <span>O(n * W)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Space Complexity</span>
+                    <span>O(n * W)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About 0/1 Knapsack</h2>
+            <p>Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. In the 0-1 Knapsack problem, we are not allowed to break items. We either take the whole item or don't take it.</p>
+            <p>This is a classic Dynamic Programming problem because it has both Overlapping Subproblems and Optimal Substructure properties.</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Create DP Table</h4>
+                        <p>Create a 2D array dp[n+1][W+1] initialized to 0. dp[i][w] represents the maximum value that can be attained with weight less than or equal to w using items up to i.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Iterate Items</h4>
+                        <p>Loop through each item i from 1 to n.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Iterate Capacity</h4>
+                        <p>For each item, loop through each possible capacity w from 1 to W.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Choice</h4>
+                        <p>If weight of the current item is less than or equal to w, take the maximum of (including the item, not including the item). Else, do not include it.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Result</h4>
+                        <p>The answer is stored in dp[n][W].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">A visual representation of the DP Knapsack algorithm.</p>
+            <img src="../../assets/knapsack_flowchart.svg" alt="Knapsack Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../../js/script_knapsack.js"></script>
+</body>
+</html>

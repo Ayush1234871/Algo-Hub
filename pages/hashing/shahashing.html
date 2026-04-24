@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA-256 Hashing | Algo Hub</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../aboutus.html">About</a></li>
+            <li><a href="../service.html">Services</a></li>
+            <li><a href="../contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="index.html" class="back-link">← Back to Hashing Algorithms</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">SHA-256</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">A secure cryptographic hash function designed for data integrity and security.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Output Size</span>
+                    <span>256 Bits</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Block Size</span>
+                    <span>512 Bits</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Security</span>
+                    <span>High</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About SHA-256</h2>
+            <p>SHA-256 (Secure Hash Algorithm 256-bit) is a cryptographic hash function that produces a fixed-size 256-bit (32-byte) hash value. It is widely used in security applications, including digital signatures, SSL certificates, and blockchain technology (like Bitcoin).</p>
+            <p>It is designed to be one-way, meaning it is computationally infeasible to reverse the hash to find the original input. It is also collision-resistant, making it highly unlikely for two different inputs to produce the same hash.</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Preprocessing</h4>
+                        <p>Pad the input message to ensure its length is a multiple of 512 bits and append the original bit length.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Initialize Hash Values</h4>
+                        <p>Set up eight 32-bit words as the initial hash values (Initialization Vector).</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Compression Loop</h4>
+                        <p>Divide the message into 512-bit blocks and process each block through 64 rounds of logical operations.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Final Output</h4>
+                        <p>Concatenate the final hash words into a single 256-bit string, usually represented in hexadecimal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">Overview of the preprocessing and round-based processing in SHA-256.</p>
+            <img src="../../assets/sha_hashing_flowchart.svg" alt="SHA-256 Flowchart" style="width: 100%; max-width: 700px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../../js/script36.js"></script>
+</body>
+</html>
+

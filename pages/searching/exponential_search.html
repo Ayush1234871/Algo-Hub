@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponential Search | Algo Hub</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../aboutus.html">About</a></li>
+            <li><a href="../service.html">Services</a></li>
+            <li><a href="../contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="index.html" class="back-link">← Back to Searching Algorithms</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">Exponential Search</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Optimizing search in large or infinite sorted datasets by doubling search ranges.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Best Case</span>
+                    <span>O(1)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Average Case</span>
+                    <span>O(log n)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Space</span>
+                    <span>O(1)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About Exponential Search</h2>
+            <p>Exponential search (also known as doubling search or galloping search) is an algorithm created for searching large sorted arrays. It works by finding an interval where the value might exist and then performing a binary search within that range.</p>
+            <p>It is particularly effective if the element is near the beginning of the array or when the size of the array is unknown (infinite lists).</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Initial Check</h4>
+                        <p>Check if the first element is the target. If yes, return index 0.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Find Range</h4>
+                        <p>Starting with index 1, keep doubling the index (1, 2, 4, 8...) as long as the element at the index is less than the target and within array bounds.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Range Identified</h4>
+                        <p>Once you find an index <code>i</code> such that <code>arr[i] > target</code>, the target must be between <code>i/2</code> and <code>min(i, n-1)</code>.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Binary Search</h4>
+                        <p>Perform a standard binary search within the small sub-range identified in step 3.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">Visualizing the exponential range finding followed by binary refinement.</p>
+            <img src="../../assets/exponential search.png" alt="Exponential Search Flowchart" style="width: 100%; max-width: 600px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../../js/script5.js"></script>
+</body>
+</html>
