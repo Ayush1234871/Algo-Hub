@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="100%" height="100%">
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#8a2be2" />
+        </marker>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2a2a35;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a1a25;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <rect width="100%" height="100%" fill="url(#grad1)" rx="15" />
+    
+    <g transform="translate(450, 50)" text-anchor="middle" font-family="Arial, sans-serif" fill="#ffffff">
+        <rect x="-100" y="0" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="25" font-weight="bold">Start</text>
+        
+        <path d="M0,40 L0,80" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+        
+        <rect x="-140" y="80" width="280" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="110">Compute LPS Array for Pattern</text>
+
+        <path d="M0,130 L0,170" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <rect x="-100" y="170" width="200" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="200">Initialize i = 0, j = 0</text>
+        
+        <path d="M0,220 L0,260" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <polygon points="0,260 100,300 0,340 -100,300" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="305">i &lt; N ?</text>
+        
+        <path d="M0,340 L0,380" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="15" y="360" fill="#00ffcc">Yes</text>
+        
+        <polygon points="0,380 140,430 0,480 -140,430" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="435">pat[j] == txt[i]?</text>
+
+        <path d="M-140,430 L-220,430 L-220,530" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-180" y="420" fill="#ff4444">No</text>
+        
+        <polygon points="-220,530 -140,580 -220,630 -300,580" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="-220" y="585">j != 0?</text>
+
+        <path d="M-140,580 L-60,580 L-60,650" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-100" y="570" fill="#00ffcc">Yes</text>
+
+        <rect x="-140" y="650" width="160" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="-60" y="680">j = lps[j-1]</text>
+
+        <path d="M-300,580 L-340,580 L-340,650" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-320" y="570" fill="#ff4444">No</text>
+
+        <rect x="-400" y="650" width="120" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="-340" y="680">i = i + 1</text>
+        
+        <path d="M140,430 L220,430 L220,480" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="180" y="420" fill="#00ffcc">Yes</text>
+
+        <rect x="140" y="480" width="160" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="220" y="510">i++, j++</text>
+
+        <path d="M220,530 L220,570" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <polygon points="220,570 300,610 220,650 140,610" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="220" y="615">j == M?</text>
+
+        <path d="M300,610 L360,610 L360,650" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="330" y="600" fill="#00ffcc">Yes</text>
+
+        <rect x="260" y="650" width="200" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="360" y="670">Pattern Found!</text>
+        <text x="360" y="690">j = lps[j-1]</text>
+
+        <path d="M140,610 L100,610 L100,750 L0,750" stroke="#8a2be2" stroke-width="2" fill="none"/>
+        <text x="120" y="600" fill="#ff4444">No</text>
+
+        <path d="M360,700 L360,750 L0,750" stroke="#8a2be2" stroke-width="2" fill="none"/>
+        <path d="M-60,700 L-60,750 L0,750" stroke="#8a2be2" stroke-width="2" fill="none"/>
+        <path d="M-340,700 L-340,750 L0,750" stroke="#8a2be2" stroke-width="2" fill="none"/>
+
+        <path d="M0,750 L0,780 L480,780 L480,240 L0,240" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+        <path d="M100,300 L520,300 L520,830 L100,830" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="120" y="290" fill="#ff4444">No</text>
+
+        <rect x="-100" y="810" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="835" font-weight="bold">End</text>
+    </g>
+</svg>

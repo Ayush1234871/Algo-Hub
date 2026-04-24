@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#8a2be2" />
+        </marker>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2a2a35;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a1a25;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <rect width="100%" height="100%" fill="url(#grad1)" rx="15" />
+    
+    <g transform="translate(300, 50)" text-anchor="middle" font-family="Arial, sans-serif" fill="#ffffff">
+        <rect x="-100" y="0" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="25" font-weight="bold">Start</text>
+        
+        <path d="M0,40 L0,80" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+        
+        <rect x="-140" y="80" width="280" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="110">Calculate Frequency of all characters</text>
+
+        <path d="M0,130 L0,170" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <rect x="-140" y="170" width="280" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="200">Create Leaf Nodes and insert to Min Heap</text>
+        
+        <path d="M0,220 L0,260" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <polygon points="0,260 120,310 0,360 -120,310" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="315">Heap Size > 1?</text>
+        
+        <path d="M0,360 L0,400" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="15" y="380" fill="#00ffcc">Yes</text>
+        
+        <rect x="-160" y="400" width="320" height="70" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="420">Extract two nodes with min freq</text>
+        <text x="0" y="440">Create new node with sum freq</text>
+        <text x="0" y="460">Insert new node to Min Heap</text>
+
+        <path d="M0,470 L0,500 L200,500 L200,240 L0,240" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+        <path d="M-120,310 L-200,310 L-200,560 L-100,560" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-160" y="300" fill="#ff4444">No</text>
+        
+        <rect x="-100" y="540" width="200" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="570">Remaining Node is Root</text>
+        
+        <path d="M0,590 L0,630" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+        
+        <rect x="-120" y="630" width="240" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="660">Traverse Tree to Assign Codes</text>
+
+        <path d="M0,680 L0,720" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <rect x="-100" y="720" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="745" font-weight="bold">End</text>
+    </g>
+</svg>

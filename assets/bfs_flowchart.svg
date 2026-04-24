@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#8a2be2" />
+        </marker>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2a2a35;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a1a25;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <rect width="100%" height="100%" fill="url(#grad1)" rx="15" />
+    
+    <g transform="translate(300, 50)" text-anchor="middle" font-family="Arial, sans-serif" fill="#ffffff">
+        <rect x="-100" y="0" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="25" font-weight="bold">Start BFS</text>
+        
+        <path d="M0,40 L0,80" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+        
+        <rect x="-140" y="80" width="280" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="110">Enqueue root node &amp; mark visited</text>
+
+        <path d="M0,130 L0,170" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <polygon points="0,170 120,220 0,270 -120,220" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="225">Is Queue Empty?</text>
+        
+        <path d="M0,270 L0,310" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="15" y="290" fill="#ff4444">No</text>
+        
+        <rect x="-120" y="310" width="240" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="340">Dequeue a node (curr)</text>
+        
+        <path d="M0,360 L0,400" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+        
+        <rect x="-160" y="400" width="320" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="430">For each neighbor 'n' of curr:</text>
+
+        <path d="M0,450 L0,490" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <polygon points="0,490 140,540 0,590 -140,540" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="545">Is 'n' visited?</text>
+        
+        <path d="M-140,540 L-200,540 L-200,620" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-170" y="530" fill="#ff4444">No</text>
+        
+        <rect x="-260" y="620" width="160" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="-180" y="640">Mark 'n' visited</text>
+        <text x="-180" y="660">Enqueue 'n'</text>
+
+        <path d="M140,540 L220,540 L220,700 L0,700" stroke="#8a2be2" stroke-width="2" fill="none"/>
+        <text x="180" y="530" fill="#00ffcc">Yes</text>
+        
+        <path d="M-180,670 L-180,700 L0,700" stroke="#8a2be2" stroke-width="2" fill="none"/>
+        
+        <path d="M0,700 L0,730 L260,730 L260,425 L160,425" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+        <path d="M120,220 L280,220 L280,800 L100,800" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="150" y="210" fill="#00ffcc">Yes</text>
+
+        <rect x="-100" y="780" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="805" font-weight="bold">End</text>
+    </g>
+</svg>

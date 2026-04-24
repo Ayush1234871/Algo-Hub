@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="100%" height="100%">
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#8a2be2" />
+        </marker>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2a2a35;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a1a25;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <rect width="100%" height="100%" fill="url(#grad1)" rx="15" />
+    
+    <g transform="translate(450, 50)" text-anchor="middle" font-family="Arial, sans-serif" fill="#ffffff">
+        <rect x="-100" y="0" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="25" font-weight="bold">Start</text>
+        
+        <path d="M0,40 L0,80" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+        
+        <rect x="-160" y="80" width="320" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="110">Calculate Pattern Hash &amp; Text Window Hash</text>
+
+        <path d="M0,130 L0,170" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <rect x="-100" y="170" width="200" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="200">Loop i from 0 to N-M</text>
+        
+        <path d="M0,220 L0,260" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <polygon points="0,260 120,310 0,360 -120,310" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="0" y="315">patHash == txtHash?</text>
+        
+        <path d="M120,310 L200,310 L200,380" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="160" y="300" fill="#00ffcc">Yes</text>
+        
+        <rect x="100" y="380" width="200" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="200" y="410">Check characters 1 by 1</text>
+
+        <path d="M200,430 L200,470" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" />
+
+        <polygon points="200,470 280,510 200,550 120,510" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="200" y="515">Exact Match?</text>
+
+        <path d="M280,510 L340,510 L340,580" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="310" y="500" fill="#00ffcc">Yes</text>
+
+        <rect x="260" y="580" width="160" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="340" y="610">Pattern Found!</text>
+
+        <path d="M-120,310 L-200,310 L-200,660" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-160" y="300" fill="#ff4444">No</text>
+        
+        <path d="M120,510 L80,510 L80,660" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="100" y="500" fill="#ff4444">No</text>
+        
+        <path d="M340,630 L340,660 L-200,660" stroke="#8a2be2" stroke-width="2" fill="none"/>
+        
+        <path d="M-200,660 L-200,680" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+        <polygon points="-200,680 -100,710 -200,740 -300,710" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="-200" y="715">i &lt; N-M ?</text>
+
+        <path d="M-100,710 L-20,710 L-20,740" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-60" y="700" fill="#00ffcc">Yes</text>
+
+        <rect x="-120" y="740" width="200" height="50" rx="5" fill="#3a3a45" stroke="#8a2be2" stroke-width="2"/>
+        <text x="-20" y="770">Calculate Next Hash</text>
+
+        <path d="M-20,790 L-20,810 L-420,810 L-420,240 L0,240" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+        <path d="M-300,710 L-340,710 L-340,840 L-100,840" stroke="#8a2be2" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+        <text x="-320" y="700" fill="#ff4444">No</text>
+
+        <rect x="-100" y="820" width="200" height="40" rx="20" fill="#8a2be2" />
+        <text x="0" y="845" font-weight="bold">End</text>
+    </g>
+</svg>

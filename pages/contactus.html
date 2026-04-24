@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,13 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 2rem;
         }
+
         .info-card {
             background: var(--bg-card);
             border: 1px solid var(--glass-border);
@@ -26,26 +29,33 @@
             border-radius: 20px;
             transition: var(--transition);
         }
-        .info-card:hover { border-color: var(--primary); }
-        
+
+        .info-card:hover {
+            border-color: var(--primary);
+        }
+
         .contact-form {
             background: var(--bg-card);
             backdrop-filter: blur(15px);
             border: 1px solid var(--glass-border);
             padding: 3rem;
             border-radius: 30px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
         }
+
         .form-group {
             margin-bottom: 2rem;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 0.8rem;
             color: var(--text-muted);
             font-weight: 500;
         }
-        .form-group input, .form-group textarea {
+
+        .form-group input,
+        .form-group textarea {
             width: 100%;
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--glass-border);
@@ -55,11 +65,14 @@
             font-family: inherit;
             transition: var(--transition);
         }
-        .form-group input:focus, .form-group textarea:focus {
+
+        .form-group input:focus,
+        .form-group textarea:focus {
             outline: none;
             border-color: var(--primary);
             background: rgba(255, 255, 255, 0.08);
         }
+
         .submit-btn {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: #fff;
@@ -73,12 +86,14 @@
             transition: var(--transition);
             box-shadow: 0 10px 20px rgba(138, 43, 226, 0.3);
         }
+
         .submit-btn:hover {
             transform: scale(1.02);
             filter: brightness(1.1);
         }
     </style>
 </head>
+
 <body>
     <div class="logo-container">
         <a href="../index.html"><img src="../assets/logo.png" alt="Algo Hub Logo"></a>
@@ -95,13 +110,13 @@
 
     <main class="content">
         <h1 class="welcome-text">Get In Touch</h1>
-        
+
         <div class="contact-container">
             <div class="contact-info">
                 <h2>Contact Information</h2>
                 <div class="info-card">
                     <h3>📍 Address</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Global Tech Park, Bangalore, India</p>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Nainital, Uttarakhand, India</p>
                 </div>
                 <div class="info-card">
                     <h3>📧 Email</h3>
@@ -109,7 +124,7 @@
                 </div>
                 <div class="info-card">
                     <h3>📱 Phone</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">+91 98765 43210</p>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;"></p>
                 </div>
             </div>
 
@@ -126,7 +141,8 @@
                     <label>Message</label>
                     <textarea rows="5" placeholder="How can we help you?"></textarea>
                 </div>
-                <button type="submit" class="submit-btn" onclick="alert('Message sent successfully!'); return false;">Send Message</button>
+                <button type="submit" class="submit-btn"
+                    onclick="alert('Message sent successfully!'); return false;">Send Message</button>
             </form>
         </div>
     </main>
@@ -135,4 +151,5 @@
         <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
     </footer>
 </body>
+
 </html>
