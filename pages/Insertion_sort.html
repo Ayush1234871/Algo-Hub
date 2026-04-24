@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort | Algo Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Algo Hub Logo"></a>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="sorting_index.html" class="back-link">← Back to Sorting Algorithms</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">Insertion Sort</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Sorting like a hand of playing cards: inserting one element at a time into its correct place.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Best Case</span>
+                    <span>O(n)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Average Case</span>
+                    <span>O(n²)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Space</span>
+                    <span>O(1)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About Insertion Sort</h2>
+            <p>Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.</p>
+            <p>However, insertion sort provides several advantages: it is easy to implement, efficient for small datasets, and adaptive (efficient for datasets that are already substantially sorted).</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Initialize</h4>
+                        <p>Assume the first element is already sorted. Pick the next element.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Compare</h4>
+                        <p>Compare the picked element with the elements in the sorted sub-list (to its left).</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Shift</h4>
+                        <p>Shift all the elements in the sorted sub-list that are greater than the picked element to be moved to the right.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Insert</h4>
+                        <p>Insert the element into the correct position.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Repeat</h4>
+                        <p>Repeat the process for all subsequent elements until the entire list is sorted.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">Visualizing the shifting and inserting logic of the Insertion Sort algorithm.</p>
+            <img src="../assets/insertion_sort_flowchart.svg" alt="Insertion Sort Flowchart" style="width: 100%; max-width: 700px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../js/script8.js"></script>
+</body>
+</html>

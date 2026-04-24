@@ -1,0 +1,30 @@
+<svg width="600" height="700" viewBox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="700" rx="20" fill="#0D0D0F"/>
+  <circle cx="300" cy="350" r="200" fill="url(#paint7_radial)" fill-opacity="0.1"/>
+  <rect x="225" y="40" width="150" height="50" rx="10" fill="#1A1A1E" stroke="#FF4D4D" stroke-width="2"/>
+  <text x="300" y="72" fill="white" font-family="Inter" font-size="14" text-anchor="middle" font-weight="bold">Start CycleSort</text>
+  <path d="M300 90V130" stroke="#FF4D4D" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="180" y="130" width="240" height="60" rx="10" fill="#1A1A1E" stroke="#00D2FF" stroke-width="2"/>
+  <text x="300" y="165" fill="white" font-family="Inter" font-size="14" text-anchor="middle">Find correct pos for item</text>
+  <path d="M300 190V230" stroke="#00D2FF" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M300 230L380 270L300 310L220 270L300 230Z" fill="#1A1A1E" stroke="#FFD700" stroke-width="2"/>
+  <text x="300" y="275" fill="white" font-family="Inter" font-size="12" text-anchor="middle">Already in pos?</text>
+  <path d="M220 270H150V510H300" stroke="#00FF9F" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="170" y="260" fill="#00FF9F" font-family="Inter" font-size="12">Yes</text>
+  <path d="M380 270H450V330" stroke="#FF4D4D" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="410" y="260" fill="#FF4D4D" font-family="Inter" font-size="12">No</text>
+  <rect x="350" y="330" width="200" height="60" rx="10" fill="#1A1A1E" stroke="#FF4D4D" stroke-width="2"/>
+  <text x="450" y="365" fill="white" font-family="Inter" font-size="14" text-anchor="middle">Swap and rotate cycle</text>
+  <path d="M450 390V430" stroke="#FF4D4D" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="350" y="430" width="200" height="60" rx="10" fill="#1A1A1E" stroke="#FF00FF" stroke-width="2"/>
+  <text x="450" y="465" fill="white" font-family="Inter" font-size="14" text-anchor="middle">Minimize writes</text>
+  <path d="M450 490V530H300" stroke="#FF00FF" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <rect x="225" y="530" width="150" height="50" rx="10" fill="#1A1A1E" stroke="#FFD700" stroke-width="2"/>
+  <text x="300" y="562" fill="white" font-family="Inter" font-size="14" text-anchor="middle" font-weight="bold">Done</text>
+  <defs>
+    <radialGradient id="paint7_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 350) rotate(90) scale(200)">
+      <stop stop-color="#FF4D4D"/><stop offset="1" stop-color="#0D0D0F" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#FF4D4D" /></marker>
+  </defs>
+</svg>

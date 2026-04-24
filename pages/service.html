@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Algo Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .service-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+        @media (min-width: 992px) {
+            .pricing-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .pricing-card.premium {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.2);
+            transform: scale(1.05);
+            z-index: 2;
+        }
+        .pricing-card.premium::after {
+            content: 'Most Popular';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .pricing-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: var(--text-main);
+        }
+        .price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+        .feature-list {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 3rem;
+            flex-grow: 1;
+        }
+        .feature-list li {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .feature-list li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: 900;
+        }
+        .action-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--glass-border);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+        .action-btn:hover {
+            background: #fff;
+            color: #000;
+        }
+        .pricing-card.premium .action-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+        }
+        .pricing-card.premium .action-btn:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            color: #fff;
+        }
+        @media (max-width: 992px) {
+            .pricing-card.premium { transform: scale(1); margin: 2rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Algo Hub Logo"></a>
+    </div>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="service-intro">
+            <h1 class="welcome-text">Our Services</h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem;">Choose the plan that fits your learning pace. From basic algorithm access to advanced corporate placement training.</p>
+        </div>
+        
+        <div class="pricing-grid">
+            <!-- Basic -->
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <div class="price">₹49<span>/mo</span></div>
+                <ul class="feature-list">
+                    <li>Access to Core Algorithms</li>
+                    <li>Detailed Explanations</li>
+                    <li>Community Support</li>
+                    <li>Basic Reasoning Logic</li>
+                    <li>Delloite Placement Set</li>
+                </ul>
+                <a href="#" class="action-btn">Get Started</a>
+            </div>
+
+            <!-- Pro -->
+            <div class="pricing-card premium">
+                <h3>Pro</h3>
+                <div class="price">₹99<span>/mo</span></div>
+                <ul class="feature-list">
+                    <li>Interactive Problems</li>
+                    <li>Reasoning + Logic Building</li>
+                    <li>Unlimited Domains</li>
+                    <li>Goldman Sachs Questions</li>
+                    <li>Accenture Placement Set</li>
+                    <li>Delloite + Basic Set</li>
+                </ul>
+                <a href="#" class="action-btn">Join Pro</a>
+            </div>
+
+            <!-- Plus -->
+            <div class="pricing-card">
+                <h3>Plus</h3>
+                <div class="price">₹199<span>/mo</span></div>
+                <ul class="feature-list">
+                    <li>Google Placement Problems</li>
+                    <li>Microsoft Placement Problems</li>
+                    <li>Advanced Reasoning</li>
+                    <li>150+ Interview Problems</li>
+                    <li>Detailed Performance Analytics</li>
+                    <li>Personalized Mentorship</li>
+                </ul>
+                <a href="#" class="action-btn">Get Plus</a>
+            </div>
+        </div>
+
+        <div class="box" style="text-align: center; margin-bottom: 6rem;">
+            <h2>Corporate Training & Volume Licensing</h2>
+            <p style="margin-bottom: 2rem;">Setting up for a university or training center? We offer custom solutions.</p>
+            <a href="contactus.html" class="get-started-button">Contact Sales</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+    </footer>
+</body>
+</html>

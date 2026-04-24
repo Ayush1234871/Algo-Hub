@@ -1,0 +1,49 @@
+<svg width="600" height="700" viewBox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="700" rx="20" fill="#0D0D0F"/>
+  <circle cx="300" cy="350" r="200" fill="url(#paint2_radial)" fill-opacity="0.1"/>
+
+  <rect x="225" y="40" width="150" height="50" rx="10" fill="#1A1A1E" stroke="#00FF9F" stroke-width="2"/>
+  <text x="300" y="72" fill="white" font-family="Inter" font-size="14" text-anchor="middle" font-weight="bold">Start</text>
+
+  <path d="M300 90V130" stroke="#00FF9F" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <rect x="180" y="130" width="240" height="60" rx="10" fill="#1A1A1E" stroke="#00D2FF" stroke-width="2"/>
+  <text x="300" y="165" fill="white" font-family="Inter" font-size="14" text-anchor="middle">Pass i from 0 to n-1</text>
+
+  <path d="M300 190V230" stroke="#00D2FF" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <rect x="180" y="230" width="240" height="60" rx="10" fill="#1A1A1E" stroke="#FF00FF" stroke-width="2"/>
+  <text x="300" y="265" fill="white" font-family="Inter" font-size="14" text-anchor="middle">Compare j and j+1</text>
+
+  <path d="M300 290V330" stroke="#FF00FF" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <path d="M300 330L380 370L300 410L220 370L300 330Z" fill="#1A1A1E" stroke="#FFD700" stroke-width="2"/>
+  <text x="300" y="375" fill="white" font-family="Inter" font-size="12" text-anchor="middle">arr[j] > arr[j+1]?</text>
+
+  <!-- Yes Branch -->
+  <path d="M380 370H450V430H300" stroke="#00FF9F" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="410" y="360" fill="#00FF9F" font-family="Inter" font-size="12">Yes</text>
+  <rect x="200" y="430" width="200" height="40" rx="10" fill="#1A1A1E" stroke="#00FF9F" stroke-width="2"/>
+  <text x="300" y="455" fill="white" font-family="Inter" font-size="12" text-anchor="middle">Swap Elements</text>
+
+  <!-- No Branch -->
+  <path d="M300 410V460" stroke="#FF4D4D" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="310" y="425" fill="#FF4D4D" font-family="Inter" font-size="12">No</text>
+
+  <path d="M300 470V510" stroke="#FFD700" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <rect x="180" y="510" width="240" height="60" rx="10" fill="#1A1A1E" stroke="#FFD700" stroke-width="2"/>
+  <text x="300" y="545" fill="white" font-family="Inter" font-size="14" text-anchor="middle">Move to next pair j++</text>
+
+  <path d="M300 570V610" stroke="#FFD700" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <rect x="225" y="610" width="150" height="50" rx="10" fill="#1A1A1E" stroke="#8A2BE2" stroke-width="2"/>
+  <text x="300" y="642" fill="white" font-family="Inter" font-size="14" text-anchor="middle" font-weight="bold">Finish Pass i</text>
+
+  <defs>
+    <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 350) rotate(90) scale(200)">
+      <stop stop-color="#00FF9F"/><stop offset="1" stop-color="#0D0D0F" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#00FF9F" /></marker>
+  </defs>
+</svg>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Algo Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .about-hero {
+            text-align: center;
+            padding: 80px 5%;
+            margin-bottom: 2rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            padding: 0 5% 80px;
+        }
+
+        .mission-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .mission-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .team-section {
+            padding: 80px 5%;
+            background: rgba(255, 255, 255, 0.02);
+            text-align: center;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .member-avatar {
+            width: 150px;
+            height: 150px;
+            background: #333;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            border: 3px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .member-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Algo Hub Logo"></a>
+    </div>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="about-hero">
+        <h1 class="welcome-text">Mastering Logic, One Algorithm at a Time</h1>
+        <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+            Algo Hub is a premier educational platform engineered to bridge the gap between abstract computer science
+            theory and practical implementation. We transform complex data structures and algorithms into intuitive,
+            visual experiences.
+        </p>
+    </header>
+
+    <section class="about-grid">
+        <div class="mission-card">
+            <div class="icon-circle">🚀</div>
+            <h2>The Mission</h2>
+            <p style="color: var(--text-muted); line-height: 1.6;">
+                To empower the next generation of engineers by providing an elite-tier, centralized hub for algorithmic
+                mastery, competitive programming preparation, and technical interview success.
+            </p>
+        </div>
+        <div class="mission-card">
+            <div class="icon-circle">🛠️</div>
+            <h2>Our Philosophy</h2>
+            <p style="color: var(--text-muted); line-height: 1.6;">
+                We believe in <strong>Precision, Performance, and Pedagogy</strong>. Every line of code on our platform
+                is meticulously vetted for time-space efficiency and readability, ensuring you learn only the best
+                practices.
+            </p>
+        </div>
+        <div class="mission-card">
+            <div class="icon-circle">🌐</div>
+            <h2>Our Impact</h2>
+            <p style="color: var(--text-muted); line-height: 1.6;">
+                By combining high-fidelity visualizations with cross-language implementations, we help thousands of
+                developers worldwide visualize execution flows and build a deeper intuition for problem-solving.
+            </p>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">The Visionaries</h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem;">Meet the minds behind the platform
+            dedicated to simplifying your learning journey.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="../assets/IMG_4281.jpg" alt="Ayush Agarwal">
+                </div>
+                <h3>Ayush Agarwal</h3>
+                <p
+                    style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">
+                    Founder &amp; Lead Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 60px 5%; border-top: 1px solid var(--glass-border); text-align: center;">
+        <p>&copy; 2024 Algo Hub. Engineering Better Futures.</p>
+        <div style="margin-top: 15px; display: flex; justify-content: center; gap: 20px;">
+            <a href="../index.html" style="color: var(--text-muted); text-decoration: none; transition: 0.3s;"
+                onmouseover="this.style.color='var(--primary)'"
+                onmouseout="this.style.color='var(--text-muted)'">Home</a>
+            <a href="service.html" style="color: var(--text-muted); text-decoration: none; transition: 0.3s;"
+                onmouseover="this.style.color='var(--primary)'"
+                onmouseout="this.style.color='var(--text-muted)'">Services</a>
+            <a href="contactus.html" style="color: var(--text-muted); text-decoration: none; transition: 0.3s;"
+                onmouseover="this.style.color='var(--primary)'"
+                onmouseout="this.style.color='var(--text-muted)'">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>

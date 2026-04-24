@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Carlo Algorithms | Algo Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="randomized.html" class="back-link">← Back to Randomized Algorithms</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">Monte Carlo Algorithms</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Randomized algorithms that use statistical sampling to provide approximate results with fixed time.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Correctness</span>
+                    <span>Probabilistic</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Time</span>
+                    <span>Fixed/O(n)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Accuracy</span>
+                    <span>N-dependent</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About Monte Carlo Algorithms</h2>
+            <p>A Monte Carlo algorithm is a randomized algorithm whose output may be incorrect with a certain (typically small) probability. Unlike Las Vegas algorithms, Monte Carlo algorithms have a deterministic or fixed running time. They are widely used for complex simulations, numerical integration, and estimating values (like π).</p>
+            <p>The key principle is that by repeating the algorithm multiple times, the probability of error can be made arbitrarily small, and the accuracy of the result increases with the number of trials.</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Random Sampling</h4>
+                        <p>Generate a large number of random samples within a defined problem space.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Test Samples</h4>
+                        <p>Perform a deterministic computation or test on each random sample.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Aggregate Results</h4>
+                        <p>Count the number of samples that satisfy a condition or calculate an average.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Approximate Solution</h4>
+                        <p>Use statistical laws (like the Law of Large Numbers) to derive the final estimate from the samples.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">Visualizing the iterative sampling process used to converge on an approximate solution.</p>
+            <img src="../assets/monte_carlo_flowchart.svg" alt="Monte Carlo Flowchart" style="width: 100%; max-width: 700px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../js/script38.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort | Algo Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Algo Hub Logo"></a>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="algo-hero">
+        <div class="content" style="margin-top: 0; min-height: auto; padding: 0;">
+            <a href="sorting_index.html" class="back-link">← Back to Sorting Algorithms</a>
+            <h1 class="welcome-text" style="margin-bottom: 1rem;">Merge Sort</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">A classic divide-and-conquer algorithm that produces a stable, sorted output.</p>
+            
+            <div class="complexity-grid">
+                <div class="complexity-badge">
+                    <span>Best Case</span>
+                    <span>O(n log n)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Average Case</span>
+                    <span>O(n log n)</span>
+                </div>
+                <div class="complexity-badge">
+                    <span>Space</span>
+                    <span>O(n)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" style="margin-top: 0; padding-top: 0;">
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🎯 About Merge Sort</h2>
+            <p>Merge sort is a recursive sorting algorithm that divides an array into two halves, sorts each half independently, and then merges the sorted halves back together in ascending order.</p>
+            <p>It is one of the most respected algorithms in computer science due to its guaranteed efficiency even in the worst-case scenario and its stability (preserving the relative order of equal elements).</p>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🚀 The Approach</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Divide</h4>
+                        <p>Split the unsorted list into two approximately equal halves.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Conquer (Recursive)</h4>
+                        <p>Recursively sort both halves by continuing to divide them until they reach a size of 1.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Merge</h4>
+                        <p>Merge the two sorted halves back into a single sorted array by comparing elements one by one.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Combine</h4>
+                        <p>Repeat the merging process until you have a single, fully sorted array.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box" style="text-align: left; width: 100%; max-width: 900px; margin-bottom: 4rem;">
+            <h2>🛠️ Implementation</h2>
+            <div class="language-selector">
+                <label>Select Language:</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <button id="copy-button">Copy Code</button>
+                </div>
+                <div class="code-display" style="padding: 20px;">
+                    <pre><code id="code"></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="box visual-section" style="text-align: center; width: 100%; max-width: 900px;">
+            <h2>📊 Flowchart</h2>
+            <p style="margin-bottom: 2rem;">Visual diagram of the divide, conquer, and merge strategy.</p>
+            <img src="../assets/merge_sort_flowchart.svg" alt="Merge Sort Flowchart" style="width: 100%; max-width: 700px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algo Hub. Making Algorithms Simple.</p>
+        <div style="margin-top: 10px;">
+            <a href="../index.html" style="color: var(--primary); text-decoration: none;">Back to Home</a>
+        </div>
+    </footer>
+
+    <script src="../js/script9.js"></script>
+</body>
+</html>

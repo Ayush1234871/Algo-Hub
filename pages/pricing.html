@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | Algo Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .pricing-hero {
+            text-align: center;
+            padding: 80px 5%;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            padding: 0 5% 100px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .price-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .price-card.popular {
+            border-color: var(--primary);
+            background: rgba(138, 43, 226, 0.05);
+            transform: scale(1.05);
+        }
+        .popular-badge {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .price-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .price-amount span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            -webkit-text-fill-color: var(--text-muted);
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 3rem;
+            text-align: left;
+            flex-grow: 1;
+        }
+        .feature-list li {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .select-btn {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 1px solid var(--glass-border);
+        }
+        .price-card.popular .select-btn {
+            background: var(--gradient-primary);
+            border: none;
+        }
+        .select-btn:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Algo Hub Logo"></a>
+    </div>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="pricing-hero">
+        <h1 class="welcome-text">Elevate Your <span style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Learning</span></h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem;">Choose the plan that fits your career goals.</p>
+    </header>
+
+    <div class="pricing-grid">
+        <div class="price-card">
+            <div class="price-header">
+                <h3>Basic</h3>
+                <div class="price-amount">₹49<span>/mo</span></div>
+            </div>
+            <ul class="feature-list">
+                <li>Access to Core Algorithms</li>
+                <li>Detailed Explanations</li>
+                <li>Community Support</li>
+                <li>Basic Reasoning Modules</li>
+                <li>Deloitte Practice Questions</li>
+            </ul>
+            <a href="#" class="select-btn">Get Started</a>
+        </div>
+
+        <div class="price-card popular">
+            <div class="popular-badge">POPULAR</div>
+            <div class="price-header">
+                <h3>Plus</h3>
+                <div class="price-amount">₹99<span>/mo</span></div>
+            </div>
+            <ul class="feature-list">
+                <li>Interactive Coding Problems</li>
+                <li>Unlimited Domain Access</li>
+                <li>Logic Building Worksheets</li>
+                <li>Goldman Sachs Questions</li>
+                <li>Accenture Practice Set</li>
+                <li>Priority Support</li>
+            </ul>
+            <a href="#" class="select-btn">Upgrade Now</a>
+        </div>
+
+        <div class="price-card">
+            <div class="price-header">
+                <h3>Pro</h3>
+                <div class="price-amount">₹199<span>/mo</span></div>
+            </div>
+            <ul class="feature-list">
+                <li>All Plus Features</li>
+                <li>Google Placement Problems</li>
+                <li>Microsoft Interview Prep</li>
+                <li>Advanced Reasoning</li>
+                <li>Detailed Problem Analysis</li>
+                <li>150+ Premium Problems</li>
+            </ul>
+            <a href="#" class="select-btn">Go Pro</a>
+        </div>
+    </div>
+
+    <footer style="padding: 40px 5%; border-top: 1px solid var(--glass-border); text-align: center;">
+        <p>&copy; 2024 Algo Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
